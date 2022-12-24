@@ -1,6 +1,5 @@
 char signal;
-String inputcode="";
-String code="";
+
 bool SetCode = false;
 void setup() {
   pinMode(2, OUTPUT);
@@ -14,7 +13,6 @@ void loop() {
 
   if(digitalRead(8)==0)
   {
-    Serial.flush();
     SetCode=!SetCode;
     digitalWrite(2, LOW);
     digitalWrite(4, LOW);
